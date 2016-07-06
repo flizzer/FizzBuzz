@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F8194951D2CFF9B00AC9E69 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8194941D2CFF9B00AC9E69 /* Brain.swift */; };
 		4FC42F421D2CF32900DB07FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC42F411D2CF32900DB07FE /* AppDelegate.swift */; };
 		4FC42F441D2CF32900DB07FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC42F431D2CF32900DB07FE /* ViewController.swift */; };
 		4FC42F471D2CF32900DB07FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC42F451D2CF32900DB07FE /* Main.storyboard */; };
 		4FC42F491D2CF32900DB07FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC42F481D2CF32900DB07FE /* Assets.xcassets */; };
 		4FC42F4C1D2CF32900DB07FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC42F4A1D2CF32900DB07FE /* LaunchScreen.storyboard */; };
-		4FC42F571D2CF32900DB07FE /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC42F561D2CF32900DB07FE /* FizzBuzzTests.swift */; };
 		4FC42F621D2CF32900DB07FE /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC42F611D2CF32900DB07FE /* FizzBuzzUITests.swift */; };
+		4FC42F701D2CF4E100DB07FE /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC42F6F1D2CF4E100DB07FE /* BrainTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F8194941D2CFF9B00AC9E69 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		4FC42F3E1D2CF32900DB07FE /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC42F411D2CF32900DB07FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC42F431D2CF32900DB07FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,11 +44,11 @@
 		4FC42F4B1D2CF32900DB07FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FC42F4D1D2CF32900DB07FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC42F521D2CF32900DB07FE /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FC42F561D2CF32900DB07FE /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		4FC42F581D2CF32900DB07FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC42F5D1D2CF32900DB07FE /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC42F611D2CF32900DB07FE /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		4FC42F631D2CF32900DB07FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC42F6F1D2CF4E100DB07FE /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4FC42F481D2CF32900DB07FE /* Assets.xcassets */,
 				4FC42F4A1D2CF32900DB07FE /* LaunchScreen.storyboard */,
 				4FC42F4D1D2CF32900DB07FE /* Info.plist */,
+				4F8194941D2CFF9B00AC9E69 /* Brain.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -110,8 +113,8 @@
 		4FC42F551D2CF32900DB07FE /* FizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
-				4FC42F561D2CF32900DB07FE /* FizzBuzzTests.swift */,
 				4FC42F581D2CF32900DB07FE /* Info.plist */,
+				4FC42F6F1D2CF4E100DB07FE /* BrainTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FC42F441D2CF32900DB07FE /* ViewController.swift in Sources */,
+				4F8194951D2CFF9B00AC9E69 /* Brain.swift in Sources */,
 				4FC42F421D2CF32900DB07FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FC42F571D2CF32900DB07FE /* FizzBuzzTests.swift in Sources */,
+				4FC42F701D2CF4E100DB07FE /* BrainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,10 +427,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrianDavis.FizzBuzzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FizzBuzz.app/FizzBuzz";
 			};
 			name = Debug;
@@ -435,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrianDavis.FizzBuzzTests;
@@ -484,6 +491,7 @@
 				4FC42F681D2CF32900DB07FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FC42F691D2CF32900DB07FE /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +500,7 @@
 				4FC42F6B1D2CF32900DB07FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FC42F6C1D2CF32900DB07FE /* Build configuration list for PBXNativeTarget "FizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +509,7 @@
 				4FC42F6E1D2CF32900DB07FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
