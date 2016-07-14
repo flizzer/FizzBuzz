@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -31,11 +32,35 @@
                                     </attributedString>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCC-wh-1Fp">
+                                <rect key="frame" x="528" y="28" width="52" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="3 / 5">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.95294117647058818" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="Avenir-Heavy"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90U-ay-nBp">
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="90U-ay-nBp" secondAttribute="height" multiplier="1:1" id="qa0-gF-AsW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.72156862745098038" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="90U-ay-nBp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="2mP-Dx-3Y1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tqv-eg-yZO" secondAttribute="bottom" constant="8" id="4JE-4v-KBs"/>
+                            <constraint firstItem="vCC-wh-1Fp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Hm5-ku-DF4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vCC-wh-1Fp" secondAttribute="trailing" id="LhL-iK-esa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Tqv-eg-yZO" secondAttribute="trailing" id="o2x-MO-VTH"/>
+                            <constraint firstItem="90U-ay-nBp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uMI-Bv-Pij"/>
+                            <constraint firstItem="90U-ay-nBp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xJg-zc-KxA"/>
                         </constraints>
                     </view>
                 </viewController>
