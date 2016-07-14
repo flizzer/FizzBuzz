@@ -1,10 +1,3 @@
-//
-//  BrainTests.swift
-//  FizzBuzz
-//
-//  Created by Brian Davis on 7/6/16.
-//  Copyright © 2016 Brian Davis. All rights reserved.
-//
 
 import XCTest
 @testable import FizzBuzz
