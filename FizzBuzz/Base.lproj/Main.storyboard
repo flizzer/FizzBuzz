@@ -45,12 +45,12 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90U-ay-nBp" userLabel="GameView">
+                            <view contentMode="topRight" translatesAutoresizingMaskIntoConstraints="NO" id="90U-ay-nBp" userLabel="GameView">
                                 <rect key="frame" x="60" y="60" width="480" height="480"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAk-u1-3DJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAk-u1-3DJ" userLabel="Number">
                                         <rect key="frame" x="0.0" y="0.0" width="230.5" height="230.5"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="button_border">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="0">
                                                     <attributes>
@@ -62,14 +62,38 @@
                                             </attributedString>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Bd-99W" userLabel="Fizz">
+                                        <rect key="frame" x="249" y="0.0" width="230.5" height="230.5"/>
+                                        <state key="normal" backgroundImage="button_border"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZ0-1I-ZZr" userLabel="FizzBuzz">
+                                        <rect key="frame" x="249" y="249" width="230.5" height="230.5"/>
+                                        <state key="normal" backgroundImage="button_border"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiu-gD-IiQ" userLabel="Buzz">
+                                        <rect key="frame" x="0.0" y="249" width="230.5" height="230.5"/>
+                                        <state key="normal" backgroundImage="button_border"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="VAk-u1-3DJ" firstAttribute="leading" secondItem="90U-ay-nBp" secondAttribute="leading" id="0gO-G8-xOB"/>
+                                    <constraint firstAttribute="trailing" secondItem="yhm-Bd-99W" secondAttribute="trailing" id="2u0-5Z-0lR"/>
+                                    <constraint firstItem="cZ0-1I-ZZr" firstAttribute="height" secondItem="90U-ay-nBp" secondAttribute="height" multiplier="0.48" id="6cW-DH-RKw"/>
+                                    <constraint firstAttribute="trailing" secondItem="cZ0-1I-ZZr" secondAttribute="trailing" id="9A7-0H-sq8"/>
+                                    <constraint firstItem="kiu-gD-IiQ" firstAttribute="leading" secondItem="90U-ay-nBp" secondAttribute="leading" id="BQR-lY-HYg"/>
+                                    <constraint firstItem="yhm-Bd-99W" firstAttribute="width" secondItem="90U-ay-nBp" secondAttribute="width" multiplier="0.48" id="Mw3-hJ-Cjc"/>
                                     <constraint firstItem="VAk-u1-3DJ" firstAttribute="top" secondItem="90U-ay-nBp" secondAttribute="top" id="QiW-41-hth"/>
                                     <constraint firstItem="VAk-u1-3DJ" firstAttribute="width" secondItem="90U-ay-nBp" secondAttribute="width" multiplier="0.48" id="WvO-Ua-gh3"/>
                                     <constraint firstItem="VAk-u1-3DJ" firstAttribute="height" secondItem="90U-ay-nBp" secondAttribute="height" multiplier="0.48" id="YCC-cB-yZw"/>
+                                    <constraint firstItem="kiu-gD-IiQ" firstAttribute="height" secondItem="90U-ay-nBp" secondAttribute="height" multiplier="0.48" id="ZRC-Gq-FP5"/>
+                                    <constraint firstAttribute="bottom" secondItem="cZ0-1I-ZZr" secondAttribute="bottom" id="gnc-nz-Ier"/>
+                                    <constraint firstItem="yhm-Bd-99W" firstAttribute="top" secondItem="90U-ay-nBp" secondAttribute="top" id="puQ-l6-ss0"/>
+                                    <constraint firstAttribute="bottom" secondItem="kiu-gD-IiQ" secondAttribute="bottom" id="q9I-m9-PJb"/>
                                     <constraint firstAttribute="width" secondItem="90U-ay-nBp" secondAttribute="height" multiplier="1:1" id="qa0-gF-AsW"/>
+                                    <constraint firstItem="kiu-gD-IiQ" firstAttribute="width" secondItem="90U-ay-nBp" secondAttribute="width" multiplier="0.48" id="syP-62-UgX"/>
+                                    <constraint firstItem="cZ0-1I-ZZr" firstAttribute="width" secondItem="90U-ay-nBp" secondAttribute="width" multiplier="0.48" id="t9h-9q-kfs"/>
+                                    <constraint firstItem="yhm-Bd-99W" firstAttribute="height" secondItem="90U-ay-nBp" secondAttribute="height" multiplier="0.48" id="tKz-Bc-NiN"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -90,4 +114,7 @@
             <point key="canvasLocation" x="393" y="310"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+    </resources>
 </document>
