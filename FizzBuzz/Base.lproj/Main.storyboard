@@ -62,17 +62,17 @@
                                             </attributedString>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Bd-99W" userLabel="Fizz">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Bd-99W" userLabel="Fizz">
                                         <rect key="frame" x="249" y="0.0" width="230.5" height="230.5"/>
-                                        <state key="normal" backgroundImage="button_border"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZ0-1I-ZZr" userLabel="FizzBuzz">
-                                        <rect key="frame" x="249" y="249" width="230.5" height="230.5"/>
-                                        <state key="normal" backgroundImage="button_border"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZ0-1I-ZZr" userLabel="FizzBuzz">
+                                        <rect key="frame" x="249.5" y="249.5" width="230.5" height="230.5"/>
+                                        <state key="normal" image="space" backgroundImage="button_border"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiu-gD-IiQ" userLabel="Buzz">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiu-gD-IiQ" userLabel="Buzz">
                                         <rect key="frame" x="0.0" y="249" width="230.5" height="230.5"/>
-                                        <state key="normal" backgroundImage="button_border"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -116,5 +116,8 @@
     </scenes>
     <resources>
         <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="80" height="82"/>
+        <image name="lightning" width="47" height="80"/>
+        <image name="space" width="75" height="80"/>
     </resources>
 </document>
