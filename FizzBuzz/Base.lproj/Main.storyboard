@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -44,10 +45,30 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90U-ay-nBp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90U-ay-nBp" userLabel="GameView">
                                 <rect key="frame" x="60" y="60" width="480" height="480"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAk-u1-3DJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="230.5" height="230.5"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="0">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="70" name="Avenir-Light"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="VAk-u1-3DJ" firstAttribute="leading" secondItem="90U-ay-nBp" secondAttribute="leading" id="0gO-G8-xOB"/>
+                                    <constraint firstItem="VAk-u1-3DJ" firstAttribute="top" secondItem="90U-ay-nBp" secondAttribute="top" id="QiW-41-hth"/>
+                                    <constraint firstItem="VAk-u1-3DJ" firstAttribute="width" secondItem="90U-ay-nBp" secondAttribute="width" multiplier="0.48" id="WvO-Ua-gh3"/>
+                                    <constraint firstItem="VAk-u1-3DJ" firstAttribute="height" secondItem="90U-ay-nBp" secondAttribute="height" multiplier="0.48" id="YCC-cB-yZw"/>
                                     <constraint firstAttribute="width" secondItem="90U-ay-nBp" secondAttribute="height" multiplier="1:1" id="qa0-gF-AsW"/>
                                 </constraints>
                             </view>
