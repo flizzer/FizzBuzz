@@ -1,15 +1,10 @@
-//
-//  ViewController.swift
-//  FizzBuzz
-//
-//  Created by Brian Davis on 7/6/16.
-//  Copyright © 2016 Brian Davis. All rights reserved.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
 
+    var GameScore: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +14,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func Play(move:String) {
+        GameScore? += 1
+    }
 
 }
 

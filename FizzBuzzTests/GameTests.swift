@@ -6,14 +6,6 @@ class GameTests: XCTestCase {
    
     let game = Game()
     
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-    
     func testGameStartsAtZero() {
         XCTAssertTrue(game.Score == 0)
     }
