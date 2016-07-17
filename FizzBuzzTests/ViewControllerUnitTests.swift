@@ -38,4 +38,38 @@ class ViewControllerUnitTests: XCTestCase {
         let newScore = viewController.GameScore
         XCTAssertEqual(newScore, 2)
     }
+    
+    func testHasAGame() {
+        XCTAssertNotNil(viewController.game)
+    }
+    
+    func testMoveFizzIncrementsScore() {
+        viewController.game?.Score = 2
+        viewController.Play("Fizz")
+        let newScore = viewController.GameScore
+        XCTAssertEqual(newScore, 3)
+    }
+    
+    func testMoveBuzzIncrementsScore() {
+        viewController.game?.Score = 4
+        viewController.Play("Buzz")
+        let newScore = viewController.GameScore
+        XCTAssertEqual(newScore, 5)
+    }
+   
+    func testMoveFizzBuzzIncrementsScore() {
+        viewController.game?.Score = 14
+        viewController.Play("FizzBuzz")
+        let newScore = viewController.GameScore
+        XCTAssertEqual(newScore, 15)
+    }
+    
+    func testUserMistakeDoesNotIncrementScore() {
+        viewController.game?.Score = 1
+        viewController.Play("Fizz")
+        let newScore = viewController.GameScore
+        XCTAssertEqual(newScore, 1)
+        
+    }
+    
 }

@@ -10,12 +10,12 @@ class Game : NSObject
         brain = Brain()
     }
     
-    func Play(move:String) -> Bool {
+    func Play(move:String) -> (Correct: Bool, Score: Int) {
         let result = brain.Check(Score + 1)
         if result == move {
             Score += 1
-            return true
+            return (true,Score)
         }
-        return false
+        return (false,Score)
     }
 }
