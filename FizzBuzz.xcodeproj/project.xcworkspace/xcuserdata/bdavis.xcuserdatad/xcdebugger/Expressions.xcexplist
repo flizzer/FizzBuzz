@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewControllerUITests.testTapNumberButtonIncrementsScore() -&gt; ():ViewControllerUITests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "XCUIApplication().buttons[&quot;0&quot;].label">
+            </PersistentString>
+            <PersistentString
+               value = "XCUIApplication().buttons[numberButton].label">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.gameScore.didset:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gameScore">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.GameScore.didset:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GameScore">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewControllerUITests.(testTapNumberButtonIncrementsScore() -&gt; ()).(implicit closure #2):ViewControllerUITests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "newScore">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

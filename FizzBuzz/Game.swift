@@ -10,7 +10,7 @@ class Game : NSObject
         brain = Brain()
     }
     
-    func Play(move:String) -> (Correct: Bool, Score: Int) {
+    func Play(_ move:String) -> (Correct: Bool, Score: Int) {
         let result = brain.Check(Score + 1)
         if result == move {
             Score += 1

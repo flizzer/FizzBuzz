@@ -9,11 +9,11 @@ class ViewControllerUnitTests: XCTestCase {
     override func setUp() {
         super.setUp()
         let storyBoard = UIStoryboard(name: "Main"
-            , bundle: NSBundle.mainBundle())
+            , bundle: Bundle.main)
         viewController = storyBoard
             .instantiateViewControllerWithIdentifier("ViewController")
                 as! ViewController
-        UIApplication.sharedApplication().keyWindow!
+        UIApplication.shared().keyWindow!
             .rootViewController = viewController
         let _ = viewController.view
     }

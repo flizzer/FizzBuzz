@@ -2,22 +2,22 @@ import Foundation
 
 class Brain: NSObject {
    
-    func IsDivisibleByThree(number: Int) -> Bool
+    func IsDivisibleByThree(_ number: Int) -> Bool
     {
         return IsDivisibleBy(3, number: number)
     }
     
-    func IsDivisibleByFive(number: Int) -> Bool
+    func IsDivisibleByFive(_ number: Int) -> Bool
     {
         return IsDivisibleBy(5, number: number)
     }
     
-    func IsDivisibleByFifteen(number: Int) -> Bool
+    func IsDivisibleByFifteen(_ number: Int) -> Bool
     {
         return IsDivisibleBy(15, number: number)
     }
     
-    func IsDivisibleBy(divisor: Int, number: Int) -> Bool
+    func IsDivisibleBy(_ divisor: Int, number: Int) -> Bool
     {
         let result = number % divisor
         if result == 0 {
@@ -26,7 +26,7 @@ class Brain: NSObject {
         return false
     }
     
-    func Check(number: Int) -> String
+    func Check(_ number: Int) -> String
     {
         if IsDivisibleByFifteen(number) {
             return "FizzBuzz"
