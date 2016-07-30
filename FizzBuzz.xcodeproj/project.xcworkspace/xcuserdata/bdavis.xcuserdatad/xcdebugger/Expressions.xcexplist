@@ -9,6 +9,9 @@
                value = "XCUIApplication().buttons[&quot;0&quot;].label">
             </PersistentString>
             <PersistentString
+               value = "XCUIApplication().buttons[&quot;1&quot;]">
+            </PersistentString>
+            <PersistentString
                value = "XCUIApplication().buttons[numberButton].label">
             </PersistentString>
          </PersistentStrings>

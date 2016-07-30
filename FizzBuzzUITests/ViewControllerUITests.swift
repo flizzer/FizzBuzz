@@ -29,13 +29,10 @@ class ViewControllerUITests: XCTestCase {
 //    }
 
     func testTapNumberButtonIncrementsScore() {
-        wait(5)
-        XCUIApplication().buttons["0"].tap()
-        //waitForExpectationsWithTimeout(5.0,handler: nil)
-        //wait(5)
-        //XCUIApplication().buttons["0"].tap()
-        //wait(1)
-        let newScore = XCUIApplication().buttons["0"].label
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        numberButton.tap()
+        let newScore = numberButton.label
 //        wait(1)
         XCTAssertEqual(newScore, "1")
     }
