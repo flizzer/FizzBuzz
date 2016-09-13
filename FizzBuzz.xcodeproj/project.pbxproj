@@ -11,6 +11,7 @@
 		4F0A0A451D37463000579D87 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A0A441D37463000579D87 /* Game.swift */; };
 		4F0A0A471D39C40C00579D87 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A0A461D39C40C00579D87 /* ViewControllerUnitTests.swift */; };
 		4F0A0A491D3BC3EC00579D87 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A0A481D3BC3EC00579D87 /* ViewControllerUITests.swift */; };
+		4F1E7A2E1D8647F0002C4C54 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E7A2D1D8647F0002C4C54 /* Move.swift */; };
 		4F8194951D2CFF9B00AC9E69 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8194941D2CFF9B00AC9E69 /* Brain.swift */; };
 		4FC42F421D2CF32900DB07FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC42F411D2CF32900DB07FE /* AppDelegate.swift */; };
 		4FC42F441D2CF32900DB07FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC42F431D2CF32900DB07FE /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		4F0A0A441D37463000579D87 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4F0A0A461D39C40C00579D87 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		4F0A0A481D3BC3EC00579D87 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		4F1E7A2D1D8647F0002C4C54 /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		4F8194941D2CFF9B00AC9E69 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		4FC42F3E1D2CF32900DB07FE /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC42F411D2CF32900DB07FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				4FC42F4D1D2CF32900DB07FE /* Info.plist */,
 				4F8194941D2CFF9B00AC9E69 /* Brain.swift */,
 				4F0A0A441D37463000579D87 /* Game.swift */,
+				4F1E7A2D1D8647F0002C4C54 /* Move.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1E7A2E1D8647F0002C4C54 /* Move.swift in Sources */,
 				4FC42F441D2CF32900DB07FE /* ViewController.swift in Sources */,
 				4F8194951D2CFF9B00AC9E69 /* Brain.swift in Sources */,
 				4FC42F421D2CF32900DB07FE /* AppDelegate.swift in Sources */,
