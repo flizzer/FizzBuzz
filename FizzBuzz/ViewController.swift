@@ -6,6 +6,9 @@ class ViewController: UIViewController {
     var game: Game?
     
     @IBOutlet weak var numberButton: UIButton!
+    @IBOutlet weak var fizzButton: UIButton!
+    @IBOutlet weak var buzzButton: UIButton!
+    @IBOutlet weak var fizzBuzzButton: UIButton!
     
     var GameScore: Int? {
         didSet {
@@ -45,73 +48,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender:UIButton!) {
-        if sender == numberButton {
+        switch sender {
+        case numberButton:
             Play(move: Move.Number)
-        }
-        else {
+        case fizzButton:
             Play(move: Move.Fizz)
+        case buzzButton:
+            Play(move: Move.Buzz)
+        case fizzBuzzButton:
+            Play(move: Move.FizzBuzz)
+        default:
+            print("Invalid Selection")
         }
         
     }
 }
-
-//
-//  ViewController.swift
-//  FizzBuzz
-//
-//  Created by Rafael Ferreira on 6/16/16.
-//  Copyright © 2016 Swift Yah. All rights reserved.
-//
-
-//import UIKit
-
-/// The `ViewController` that conects our UI with `Brain` model.
-//class ViewController: UIViewController {
-//    @IBOutlet weak var numberButton: UIButton!
-//    @IBOutlet weak var fizzButton: UIButton!
-//    @IBOutlet weak var buzzButton: UIButton!
-
-    // MARK: Read-only variables.
-    
-    /// The current game score.
-//    private(set) var gameScore = 0 {
-//        didSet {
-//            numberButton.setTitle("\(gameScore)", for: UIControlState())
-//        }
-//    }
-
-    /// The current game.
-//    private(set) var game = Game()
-
-    // MARK: Public functions.
-    
-    /// Calls for the `Brain` that the user is trying to do a move.
-//    func play(_ move: String) -> Bool {
-//        let result = game.Play(move)
-//        
-//        gameScore = result.Score
-//        
-//        return result.Correct
-//    }
-
-    // MARK: IBAction functions.
-    
-//    @IBAction func buttonTapped(_ sender: UIButton) {
-//        play("1")
-//        switch sender {
-//        case numberButton:
-//            play(.Number)
-//            
-//        case fizzButton:
-//            play(.Fizz)
-//            
-//        case buzzButton:
-//            play(.Buzz)
-//            
-//        default:
-//            play(.FizzBuzz)
-//        }
-        
-//    }
-
-//}
