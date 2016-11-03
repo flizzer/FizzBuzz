@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func Play(move:String) {
+    func Play(move:Move) {
         guard let unwrappedGame = game else {
             print("Game is nil!")
             return
@@ -45,11 +45,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender:UIButton!) {
-        guard let unwrappedGameScore = GameScore else {
-            print("GameScore is nil")
-            return
+        if sender == numberButton {
+            Play(move: Move.Number)
         }
-        Play(move: "\(unwrappedGameScore + 1)")
+        else {
+            Play(move: Move.Fizz)
+        }
+        
     }
 }
 

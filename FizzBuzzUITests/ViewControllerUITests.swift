@@ -26,10 +26,14 @@ class ViewControllerUITests: XCTestCase {
         XCTAssertEqual(newScore, "2")
     }
     
-    private func wait(_ seconds: TimeInterval) {
-        let dateAfterWait = Date(timeIntervalSinceNow: seconds)
-        RunLoop.main.run(until: dateAfterWait)
+    func testTapFizzButtonIncrementsTo3() {
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        numberButton.tap();
+        numberButton.tap();
+        let fizzButton = app.buttons["fizzButton"]
+        fizzButton.tap()
+        let newScore = numberButton.label;
+        XCTAssertEqual(newScore,"3")
     }
-    
-
 }
